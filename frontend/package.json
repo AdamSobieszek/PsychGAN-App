@@ -35,6 +35,8 @@
     "@storybook/nextjs": "^7.0.0-beta.54",
     "@storybook/react": "^7.0.0-beta.54",
     "@storybook/testing-library": "^0.0.14-next.1",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
     "eslint-plugin-storybook": "^0.6.11",
     "storybook": "^7.0.0-beta.54"
   }

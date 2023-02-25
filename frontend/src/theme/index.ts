@@ -13,6 +13,7 @@ export const theme = extendTheme({
     global: {
       "html, body": {
         fontFamily: "Work Sans, sans-serif",
+        color: "#4A5568",
       },
     },
   },
