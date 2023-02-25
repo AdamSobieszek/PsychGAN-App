@@ -1,16 +1,16 @@
 import {
-  Accordion,
   AccordionItem as ChakraAccordionItem,
+  AccordionItemProps,
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
   Box,
-  AccordionProps,
 } from "@chakra-ui/react";
+import type { ReactNode } from "react";
 
-export type CollapsableSectionProps = AccordionProps & {
+export type CollapsableSectionProps = AccordionItemProps & {
   title: string;
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 export const AccordionItem = ({
@@ -19,7 +19,7 @@ export const AccordionItem = ({
   ...rest
 }: CollapsableSectionProps) => {
   return (
-    <ChakraAccordionItem border="none">
+    <ChakraAccordionItem border="none" {...rest}>
       <h2>
         <AccordionButton>
           <Box

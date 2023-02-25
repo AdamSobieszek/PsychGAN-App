@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:storybook/recommended",
+    "eslint:recommended"
+  ],
+  "rules": {
+    "no-unused-vars": "warn"
+  }
+}
