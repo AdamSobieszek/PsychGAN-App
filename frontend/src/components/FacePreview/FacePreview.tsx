@@ -1,6 +1,8 @@
 import { CloseIcon } from "@chakra-ui/icons";
 import { Box, BoxProps, IconButton } from "@chakra-ui/react";
 
+export const DEFAULT_FACE_SIZE = "167px";
+
 export type FacePreviewProps = BoxProps & {
   src: string;
   size?: number | string;
@@ -10,7 +12,7 @@ export type FacePreviewProps = BoxProps & {
 
 export const FacePreview = ({
   src,
-  size = "167px",
+  size = DEFAULT_FACE_SIZE,
   onRemove,
   colorScheme,
   ...rest
